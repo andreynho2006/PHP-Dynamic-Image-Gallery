@@ -7,8 +7,22 @@ function init() {
     prepareThumbs();
 }
 
-function toggle() {
-    window.console.log("show or hide a big image");
+function toggle( event ) {
+    //which image was clicked
+    var clickedImage = event.target;
+    var bigImage = document.querySelector("#big-image");
+    var overlay = document.querySelector("#overlay");
+    bigImage.src = clickedImage.src;
+    //if overlay is hidden , we assume the big image is hidden
+    if ( overlay.getAttribute("class") === "hidden" ) {
+        overlay.setAttribute("class", "showing");
+        bigImage.setAttribute("class", "showing");
+        console.log("big");
+    } else {
+        overlay.setAttribute("class", "hidden");
+        bigImage.setAttribute("class", "hidden");
+        console.log("small");
+    }
 }
 
 function prepareThumbs() {
