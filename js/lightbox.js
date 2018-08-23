@@ -4,6 +4,10 @@ function init() {
     lightboxElements += "<img class='hidden' id='big-image' />";
     lightboxElements == "</div>";
     document.querySelector("body").innerHTML += lightboxElements;
+
+    //register toggle as event handler
+    var bigImage = document.querySelector("#big-image");
+    bigImage.addEventListener("click", toggle, false);
     prepareThumbs();
 }
 
