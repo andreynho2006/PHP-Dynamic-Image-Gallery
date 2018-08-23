@@ -1,7 +1,25 @@
-h1 {
-    color: red;
-}
-img {
+div#overlay {
+    position: absolute;
     width: 100%;
-    max-width: 250px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: black;
+    opacity: 0.85;
+}
+
+div#overlay.hidden,
+img#big-image.hidden {
+    opacity: 0;
+    left: -200%;
+}
+
+li.lightbox img {
+    height: 140px;
+    width: 140px;
+}
+
+li.lightbox {
+    display: inline-block;
+    margin: 10px;
 }
