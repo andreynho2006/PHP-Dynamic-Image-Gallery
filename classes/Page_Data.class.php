@@ -7,8 +7,8 @@ class Page_Data {
     public $embeddedStyle = "";
     public $scriptElements = "";
 
-    public function addScript ($src ) {
-        $this->scriptElements .= "<script src='$src'</script>";
+    public function addScript ( $src ) {
+        $this->scriptElements .= "<script src='$src'></script>";
     }
 
     public function addCSS($href) {

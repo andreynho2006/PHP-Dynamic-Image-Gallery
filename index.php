@@ -5,11 +5,12 @@ ini_set("display_errors", 1);
 include_once "classes/Page_Data.class.php";
 
 $pageData = new Page_Data();
-
+$pageData->addScript('js/lightbox.js');
 $pageData->title = "Dynamic image gallery";
 $pageData->content = include_once "views/navigation.php";
 $pageData->addCSS('css/layout.css');
 $pageData->addCSS('css/navigation.css');
+
 
 $userClicked = isset($_GET['page']);
 if( $userClicked )

@@ -8,5 +8,6 @@ $pageData->css
 $pageData->embeddedStyle
 </head>
 $pageData->content
+$pageData->scriptElements
 </body>
 </html>";
