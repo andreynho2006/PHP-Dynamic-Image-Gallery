@@ -6,6 +6,7 @@ div#overlay {
     left: 0px;
     background: black;
     opacity: 0.85;
+    transition: opacity 1s ease-in;
 }
 
 div#overlay.hidden,
