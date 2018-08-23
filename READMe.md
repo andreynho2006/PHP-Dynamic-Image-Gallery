@@ -1,1 +1,0 @@
-"# PHP Dynamic-Image-Gallery" 
