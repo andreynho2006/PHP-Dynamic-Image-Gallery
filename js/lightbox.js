@@ -1,1 +1,5 @@
-window.console.log("Hello from JS");
+function init() {
+    window.console.log("Welcome, user with a new browser");
+}
+
+document.addEventListener("DOMContentLoaded", init, false);
